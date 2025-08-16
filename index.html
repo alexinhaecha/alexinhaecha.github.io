@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio Shop</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="products.html">Products</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Welcome to My Portfolio Shop</h1>
+    <p>I “sell” my skills and projects as products. Browse my work and see what I can do!</p>
+    <a href="products.html">View My Products</a>
+  </header>
+
+  <!-- Featured Products Section -->
+  <section>
+    <h2>Featured Skills / Projects</h2>
+    <div id="featured-products"></div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    // Load first 3 products as featured
+    async function loadFeaturedProducts() {
+      const response = await fetch("products.json");
+      const products = await response.json();
+      const featured = products.slice(0, 3); // pick first 3
+      const container = document.getElementById("featured-products");
+      container.innerHTML = featured.map(p => `
+        <div>
+          <a href="product.html?id=${p.id}">
+            <img src="${p.image}" alt="${p.title}" width="150">
+            <h3>${p.title}</h3>
+          </a>
+        </div>
+      `).join("");
+    }
+    loadFeaturedProducts();
+  </script>
+</body>
+</html>
