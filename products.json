@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "image": "images/web-development.jpg",
+    "description": "I build responsive and interactive websites using modern technologies. Projects include personal websites, e-commerce clones, and web apps.",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Next.js"]
+  },
+  {
+    "id": 2,
+    "title": "UI/UX Design",
+    "image": "images/ui-ux-design.jpg",
+    "description": "Designing intuitive and visually appealing user interfaces. I focus on user experience, prototyping, and design systems for web and mobile apps.",
+    "skills": ["Figma", "Sketch", "Prototyping", "Wireframing", "User Testing"]
+  },
+  {
+    "id": 3,
+    "title": "Data Analysis",
+    "image": "images/data-analysis.jpg",
+    "description": "Analyzing complex datasets to extract actionable insights. Experienced in data visualization, statistical analysis, and reporting.",
+    "skills": ["Python", "Pandas", "SQL", "Excel", "Matplotlib"]
+  },
+  {
+    "id": 4,
+    "title": "Machine Learning",
+    "image": "images/machine-learning.jpg",
+    "description": "Building predictive models using machine learning algorithms. Includes projects in classification, regression, and clustering.",
+    "skills": ["Python", "scikit-learn", "TensorFlow", "Keras", "Data Preprocessing"]
+  },
+  {
+    "id": 5,
+    "title": "Mobile App Development",
+    "image": "images/mobile-app-dev.jpg",
+    "description": "Creating mobile applications for Android and iOS. Focused on performance, user experience, and cross-platform solutions.",
+    "skills": ["React Native", "Flutter", "Dart", "Swift", "Android Studio"]
+  }
+]
