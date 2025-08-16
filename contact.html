@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="products.html">Products</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Contact Me</h1>
+
+  <form id="contact-form">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="message" required></textarea><br><br>
+
+    <input type="submit" value="Send">
+  </form>
+
+  <p id="confirmation" style="color:green; display:none;">Thank you! Your message has been submitted.</p>
+
+  <script src="script.js"></script>
+  <script>
+    // Pre-fill "interest" from product page
+    prefillContact();
+
+    // Handle form submission (simulate confirmation)
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault(); // prevent actual submission
+      document.getElementById("contact-form").style.display = "none";
+      document.getElementById("confirmation").style.display = "block";
+    });
+  </script>
+</body>
+</html>
