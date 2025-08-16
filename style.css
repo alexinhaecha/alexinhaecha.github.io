@@ -1,0 +1,159 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+header a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: #e65c00;
+}
+
+/* Product Grid */
+#product-grid, #featured-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#product-grid div, #featured-products div {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#product-grid img, #featured-products img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#product-grid h2, #featured-products h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+/* Product Details */
+#product-details {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#product-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#product-details h1 {
+  margin-bottom: 10px;
+}
+
+#product-details ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#product-details li {
+  background-color: #ff6600;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 3px;
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e65c00;
+}
+
+#confirmation {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
